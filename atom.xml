@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Xjc blog</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://Xxx-jc.github.io/"/>
+  <updated>2019-10-12T08:52:16.945Z</updated>
+  <id>http://Xxx-jc.github.io/</id>
+  
+  <author>
+    <name>Xjc</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>我的blog搭建过程</title>
+    <link href="http://Xxx-jc.github.io/2019/10/09/%E6%88%91%E7%9A%84hexo%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/"/>
+    <id>http://Xxx-jc.github.io/2019/10/09/我的hexo搭建过程/</id>
+    <published>2019-10-09T13:28:04.000Z</published>
+    <updated>2019-10-12T08:52:16.945Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;#运用Hexo+Github构建&lt;br&gt;#通过Hexo生成静态网页再将其托管于Github上&lt;br&gt;$何为Hexo？&lt;/p&gt;
+&lt;p&gt;##Hexo是一个快速、简洁高效的博客框架。Hexo使用markdown及其他渲染引擎解析文章&lt;/p&gt;
+&lt;p&gt;$何为Github&lt;/p&gt;
+&lt;p&gt;##Github是一个面向开源及私有软件项目的托管平台，因为只支持git作为唯一的版本格式进行托管，故名Github&lt;/p&gt;
+&lt;p&gt;1.&lt;br&gt;$安装 Node.js&lt;br&gt;&lt;a href=&quot;https://nodejs.org/en/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://nodejs.org/en/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;#安装之后通过cmd（win）确认&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;node -v&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;###如果已经安装该软件，则会显示对应的安装软件版本，否则将会提示“xxx”不是内部命令或外部命令（下面安装的软件同理）&lt;/p&gt;
+&lt;p&gt;2.&lt;br&gt;$安装Git&lt;br&gt;&lt;a href=&quot;https://git-scm.com/downloads&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://git-scm.com/downloads&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;###安装成功后点击鼠标右键就会看到两个新增的选项：Git Gui Here和Git Bash Here&lt;/p&gt;
+&lt;p&gt;3.&lt;br&gt;$创建Hexo文件夹&lt;br&gt;在你觉得合适的磁盘里新建一个文件夹作为blog目录(例：E:\Hexo)直接在文件夹内点击鼠标右键，选择Git Bash&lt;/p&gt;
+&lt;p&gt;3.1&lt;br&gt;$安装Hexo&lt;br&gt;&lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://hexo.io/&lt;/a&gt;&lt;br&gt;利用npm命令进行安装&lt;br&gt;在任意位置点击鼠标右键，选择Git Bash Here&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;npm install -g hexo&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hexo init blog(你自建文件夹的博客名)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;cd&lt;/span&gt; blog(你自建文件夹的博客名)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;npm install&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hexo server&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;(以上步骤依次执行)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;###可以通过命令查询版本（在cmd下似乎需要设置环境变量不然会报错，直接用gitbash即可）&lt;br&gt;###后面的步骤都是要在创建的blog目录下启动GitBash&lt;/p&gt;
+&lt;p&gt;3.2&lt;br&gt;$查看效果&lt;br&gt;截至目前我们已经搭建起本地的blog了，接着在你的blog目录下启动GitBash&lt;br&gt;&lt;img src=&quot;/2019/10/09/我的hexo搭建过程/1.PNG&quot; alt&gt;&lt;br&gt;复制到浏览器即可&lt;/p&gt;
+&lt;p&gt;#至此，本地blog已经搭建起来了，但此时你的blog只能在本地访问，接下来我们要做的就是将blog部署到Github&lt;/p&gt;
+&lt;p&gt;4.&lt;br&gt;$将博客部署到Github&lt;br&gt;&lt;a href=&quot;https://github.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;4.1&lt;br&gt;$注册Github账号&lt;/p&gt;
+&lt;p&gt;注册成功后会出现“Create a new repository”页面&lt;br&gt;往下看 owner是你github的用户名&lt;br&gt;repository name是你的仓库名称&lt;br&gt;#这里的仓库名称必须按xxx.github.io填写（xxx是你自己的用户名）&lt;/p&gt;
+&lt;p&gt;4.2&lt;br&gt;$创建ssh&lt;br&gt;打开GitBash&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ ssh-keygen -t rsa -C &lt;span class=&quot;string&quot;&gt;&quot;你的邮箱&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;接着一路回车 最后退出即可&lt;/p&gt;
+&lt;p&gt;接下来打开c盘——&amp;gt;用户——&amp;gt;.ssh——&amp;gt;id_rsa.pub(用记事本方式打开)&lt;br&gt;复制粘贴里面的ssd到你的Github中&lt;br&gt;#登录Github，点击右上角的个人头像，点击settings，接下来在Personal settings里点击SSH and GPG keys&lt;br&gt;#Title就写你的用户名就好，下面的key需要把你复制的SSH粘贴上去，完事后添加就好&lt;/p&gt;
+&lt;p&gt;4.3&lt;br&gt;$修改站点配置文件（_config.yml)&lt;br&gt;可以使用sublime等文本编辑器更改&lt;br&gt;&lt;img src=&quot;/2019/10/09/我的hexo搭建过程/3.PNG&quot; alt&gt;&lt;br&gt;首先修改你的url（也就是你github的地址）&lt;br&gt;&lt;img src=&quot;/2019/10/09/我的hexo搭建过程/2.PNG&quot; alt&gt;&lt;br&gt;接着按图片修改（地址改成你Github仓库的地址）&lt;/p&gt;
+&lt;p&gt;#在正式部署之前要先进行模块安装&lt;br&gt;还是老样子在你的blog目录下打开Git Bash并输入命令&lt;br&gt;#安装模块&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;npm install hexo-deployer-git --save&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;#修改用户名和邮箱&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git config --global user.name&lt;span class=&quot;string&quot;&gt;&quot;你自己的用户名&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git config --global user.name&lt;span class=&quot;string&quot;&gt;&quot;你自己的邮箱&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;#最后执行下列指令完成部署&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;hexo generate(hexo g)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hexo deploy(hexo d)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;输入完成后会弹出一个窗口，输入你的Github账号即可&lt;/p&gt;
+&lt;p&gt;6.&lt;br&gt;到这里最基本的步骤已经完成了，输入你github.io的地址即可访问&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo搭建过程中遇到的问题</title>
+    <link href="http://Xxx-jc.github.io/2019/10/09/hexo%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/"/>
+    <id>http://Xxx-jc.github.io/2019/10/09/hexo搭建过程中遇到的问题/</id>
+    <published>2019-10-09T13:24:40.000Z</published>
+    <updated>2019-10-09T14:37:50.667Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;首先是正常的操作步骤&lt;/p&gt;
+
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>“第一”</title>
+    <link href="http://Xxx-jc.github.io/2019/10/08/%E2%80%9C%E7%AC%AC%E4%B8%80%E2%80%9D/"/>
+    <id>http://Xxx-jc.github.io/2019/10/08/“第一”/</id>
+    <published>2019-10-08T15:42:35.000Z</published>
+    <updated>2019-10-08T15:42:35.195Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://Xxx-jc.github.io/2019/10/08/2/"/>
+    <id>http://Xxx-jc.github.io/2019/10/08/2/</id>
+    <published>2019-10-08T15:13:46.776Z</published>
+    <updated>2019-10-08T15:13:47.498Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Hexo 插入图片无法显示解决办法（暂）&lt;br&gt;1.设置站点配置_config.yml将post_asset_folder:false改为true&lt;br&gt;2.安装插件，在hexo目录下执行&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://Xxx-jc.github.io/2019/10/07/%E7%AC%AC%E4%B8%80/"/>
+    <id>http://Xxx-jc.github.io/2019/10/07/第一/</id>
+    <published>2019-10-07T14:08:49.877Z</published>
+    <updated>2019-10-12T07:15:12.055Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Hexo常用命令&lt;/p&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;npm install hexo-g                            //安装&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://Xxx-jc.github.io/2019/10/06/hello-world/"/>
+    <id>http://Xxx-jc.github.io/2019/10/06/hello-world/</id>
+    <published>2019-10-06T14:42:54.091Z</published>
+    <updated>2019-10-06T16:38:12.533Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+</feed>
