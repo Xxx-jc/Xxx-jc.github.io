@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+
+
+
+
+
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 3.9.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.4.1">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.4.1">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.4.1">
+  <link rel="mask-icon" href="/images/logo.svg?v=7.4.1" color="#222">
+  <link rel="alternate" href="/atom.xml" title="Xjc blog" type="application/atom+xml">
+
+<link rel="stylesheet" href="/css/main.css?v=7.4.1">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '7.4.1',
+    exturl: false,
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: '',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    translation: {
+      copy_button: '复制',
+      copy_success: '复制成功',
+      copy_failure: '复制失败'
+    },
+    sidebarPadding: 40
+  };
+</script>
+
+  <meta name="description" content="一 .">
+<meta name="keywords" content="题目">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数据结构试题">
+<meta property="og:url" content="http://Xxx-jc.github.io/2019/10/13/数据结构试题/index.html">
+<meta property="og:site_name" content="Xjc blog">
+<meta property="og:description" content="一 .">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2020-03-14T10:12:34.190Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="数据结构试题">
+<meta name="twitter:description" content="一 .">
+  <link rel="canonical" href="http://Xxx-jc.github.io/2019/10/13/数据结构试题/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true,
+    isPage: false,
+    isArchive: false
+  };
+</script>
+
+  <title>数据结构试题 | Xjc blog</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Xjc blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+      
+      
+        
+        
+        <li class="menu-item menu-item-home">
+      
+    
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+      
+    
+      
+      
+        
+        
+        <li class="menu-item menu-item-tags">
+      
+    
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+
+  </li>
+      
+    
+      
+      
+        
+        
+        <li class="menu-item menu-item-categories">
+      
+    
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
+
+  </li>
+      
+    
+      
+      
+        
+        
+        <li class="menu-item menu-item-archives">
+      
+    
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+      
+    
+  </ul>
+
+    
+
+</nav>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://Xxx-jc.github.io/2019/10/13/数据结构试题/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Xjc">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/gun.PNG">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Xjc blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            数据结构试题
+            
+
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2019-10-13 13:05:51" itemprop="dateCreated datePublished" datetime="2019-10-13T13:05:51+08:00">2019-10-13</time>
+            </span>
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-03-14 18:12:34" itemprop="dateModified" datetime="2020-03-14T18:12:34+08:00">2020-03-14</time>
+              </span>
+            
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/数据结构/" itemprop="url" rel="index">
+                    <span itemprop="name">数据结构</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>一 .</p><a id="more"></a>
+<ol>
+<li><p>单链表的逻辑次序与物理存储次序是否相同？元素之间的逻辑关系在内存中用什么表示（连接）<br>#线性链表中各个表元素的逻辑顺序与物理存储顺序不一定相同<br>#用指针连接</p>
+</li>
+<li><p>单链表的结点包含几个成员信息？成员中包含几个指针域？<br>#2个成员：数据域和指针域<br>#一个指针域</p>
+</li>
+<li><p>如何获取单链表中结点p的数据元素的值（用代码表示）<br>#p-&gt;data或(*p).data</p>
+</li>
+<li><p>头结点的作用是什么？单链表中是否必须要有头结点？<br>#头结点是为了操作的统一和方便而设立的，其数据域一般无意义，有了头结点，对在第一个元素结点前插入结点和删除第一个结点，其操作与其他结点的操作就统一了<br>#头结点不一定是链表的必须要素</p>
+</li>
+<li><p>线性表的元素总数基本稳定，且很少进行插入和删除操作，但要求以最快的速度存取线性表中的元素时，应采用什么存储结构？<br>#顺序存储结构</p>
+</li>
+<li><p>设单链表的结点结构为(data,next),next为指针域，已知指针px指向单链表中data为x的结点，指针py指向data为y的新结点，若将结点y插入在结点x之后，则需要执行以下语句：<br>#py-&gt;next=px-&gt;next(先将py与原来px后的结点连起来);px-&gt;next=py(再将px断开，与py连起来)</p>
+</li>
+<li><p>在一个长度为n的顺序表中第i个元素(1&lt;=i&lt;=n)之前插入一个元素时，需向后移动——个元素<br>#n-i+1</p>
+</li>
+<li><p>对于一个具有n个结点的单链表，在已知的结点*p后插入一个新结点的时间复杂度为<em>，在给定值为x的结点后插入一个新结点的时间复杂度为</em><br>#O(1)<br>#O(n)</p>
+</li>
+<li><p>链接存储的特是利用_来表示数据元素之间的逻辑关系<br>#指针</p>
+</li>
+</ol>
+<p>10.顺序结构是通过_表示元素之间的关系的；链式存储结构是通过_表示元素之间的关系的<br>#物理上相邻<br>#指针 </p>
+<ol start="11">
+<li><p>对于双向链表，在两个结点之前插入一个新结点需修改的指针共_个，单链表为_个<br>#4（两个前驱，两个后继）<br>#2（两个后继）</p>
+</li>
+<li><p>循环单链表最大的优点是：<br>#从任一结点出发都可访问到链表中每一个元素</p>
+</li>
+<li><p>已知指针p指向单链表L中的某结点，则删除其后继结点的语句是：<br>#u=p-&gt;next;p-&gt;next=u-&gt;next;delete u;</p>
+</li>
+<li><p>在单链表L中，指针p所指结点有后继结点的条件是：<br>#p-&gt;next!=null</p>
+</li>
+<li><p>带头双结点的双循环链表L中只有一个元素结点的条件是：<br>#L-&gt;next-&gt;next==L</p>
+</li>
+<li><p>带头结点的双循环链表L为空表的条件是：<br>L-&gt;next==L&amp;&amp;L-&gt;prior==L</p>
+</li>
+<li><p>斜树的特点是每一层中只有一个结点，斜树的结点个数与其深度相同</p>
+</li>
+<li><p>二叉树中每个结点的两颗子树是有序的</p>
+</li>
+<li><p>深度为k的完全二叉树至少有2的k次方减1个结点</p>
+</li>
+<li><p>对于一颗非空二叉树，它的根结点作为第一层,则它的第i层上最多能有2的i次方减1个结点（错误，应该是当该二叉树为满二叉树的时候）</p>
+</li>
+<li><p>二叉树每个结点有两颗非空子树或有两颗空子树（错误，还有单枝树）</p>
+</li>
+<li><p>二叉树的遍历操作实际上是将非线性结构线性化的过程</p>
+</li>
+<li><p>若完全二叉树有n个结点，其叶子节点的个数为（n+1）/2</p>
+</li>
+<li><p>树的先根遍历序列与其所转化的二叉树的先序遍历序列相同</p>
+</li>
+<li><p>用二叉链表法存储包含n个结点的二叉树，结点的2n个指针区域中有n+1个为空指针</p>
+</li>
+<li><p>在哈夫曼树中，权值最小的结点离根结点最近（错误，哈夫曼树是贪心算法的应用，选取集合中两个权值最小的元素自底向上的构成树，所以权值较大的节点离根较近</p>
+</li>
+<li><p>哈夫曼树是正则二叉树，其中只有度为0和度为2的结点，满二叉树是正则二叉树的特例</p>
+</li>
+<li><p>假定一棵二叉树上，双分支节点数为15个，单分支点为32个，则叶子节点数是多少（每个分支下面都有一个结点，所以总结点点数N=2<em>15+1</em>32+0*叶子数+1（根结点）=63<br>二叉树中除了双分支结点，单分支结点就是叶子结点<br>所以叶子树=63-15-32=16</p>
+</li>
+<li><p>在满足满二叉树的性质后，最后一层的叶子节点均需在最左边</p>
+</li>
+<li><p>将一颗有100个结点的完全二叉树从根这一层开始，每一层从左到右依次对结点进行编号，根结点编号为1.则编号为49的结点的左孩子的编号为98（49<em>2+1，右结点为49</em>2+1+1=50）</p>
+</li>
+<li><p>对于有n个结点的完全二叉树，其高度为log2n+1</p>
+</li>
+<li><p>设某棵二叉树中有2000个结点，则该二叉树的最小高度为11（最小高度自然就是等于2000个结点的完全二叉树的高度：下取整（log2n）+1 现在下取整（log2（2000））+1=(log2(2000))+1=11</p>
+</li>
+<li><p>深度为k的完全二叉树中最少有2的k减1次方个结点，最多有2的k次方减1个结点</p>
+</li>
+<li><p>无向图的顶点个数为n，则该图最多有n(n-1)/2条边</p>
+</li>
+<li><p>有向图的顶点个数为n，则该图最多有n(n-1)条边</p>
+</li>
+<li><p>一个有n个顶点的图，最少有1个连通分量（它本身），最多n个（该图没有边，每个顶点构成一个连通分量）</p>
+</li>
+<li><p>无向图的邻接矩阵是对称矩阵</p>
+</li>
+<li><p>深度优先遍历序列(DFS)和拓扑排序可以判断出一个有向图是否有环（回路）</p>
+</li>
+<li><p>关键路径是事件结点网络中从源点到汇点的最长路径（AOE网络概念，不是AOV）</p>
+</li>
+<li><p>在有n个顶点的有向图中，每个顶点的度最大可达2（n-1）</p>
+</li>
+<li><p>AOE(activity on Edge)以弧表示活动  AOV(activity on vertex network)以顶点表示活动</p>
+</li>
+<li><p>拓扑排序的定义就是对有向无环图(DAG)由顶点活动网(AOV)进行线性排序</p>
+</li>
+<li><p>只有带权无向图的各个权值都不一样时，最小生成树才是唯一的</p>
+</li>
+<li><p>适用于折半查找的表的存储方式及元素排列要求为顺序方式存储，元素有序</p>
+</li>
+<li><p>哈希函数越复杂，则时间就会越多，因此不是越复杂越好，还要考虑时间</p>
+</li>
+<li><p>高度等于其结点数<br>二 .</p>
+</li>
+<li><p>线表是具有n个数据元素的有限序列（n&gt;0)</p>
+</li>
+<li><p>若某线性表最常用的操作是存取任一指定序号的元素和在最后进入插入和删除运算，则利用顺序表存储方法最节省时间<br>#链表都需要从头开始</p>
+</li>
+<li><p>某线性表中最常用的额操作是在最后一个元素之后插入一个元素和删除一个元素，则采用仅有尾指针的单循环链表存储方式最节省运算时间<br>#操作最后一个元素需要尾指针，删除第一个元素用带尾指针循环链表最合适</p>
+</li>
+<li><p>设一个链表最常用的操作是在末尾插入结点和删除尾结点，则选用带头结点的双循环链表最节省时间<br>#重点是节省时间，而带头结点的双循环链表可以操作头结点的前驱指针</p>
+</li>
+<li><p>顺序存储结构的优点是存储密度大<br>从而实现节省时间</p>
+</li>
+<li><p>链表中指针表示的是下一元素地址</p>
+</li>
+<li><p>链表不具有的特点是可随机访问任一元素<br>#链表是线性表的链式存储，是用结点来存储数据元素，线性表采用链表作为存储结构时，不能进行数据元素的随机访问，其优点是插入和删除操作不需要移动元素</p>
+</li>
+<li><p>若长度为n的线性表采用顺序存储结构，在其第i个位置插入一个新元素的算法时间复杂度为O(n)(1&lt;=i&lt;=n+1)<br>#复杂度O(n)的意思是：该代码的算法能力与n的一次方有关系，在本题中，在第i个位置插入后，需要让线性表向后移动n-i+1,该算法与n的一次放有关系，所以复杂度是O(n)</p>
+</li>
+<li><p>对于顺序存储的线性表，访问结点和增加、删除结点的时间复杂度为O(1) O(n)<br>#访问结点只需要下标，增加和删除结点要整体移动目标元素后面的元素，最多的情况是n次</p>
+</li>
+<li><p>在一个以h为头的单循环链表中，p指针指向链尾的条件是p-&gt;next=h</p>
+</li>
+<li><p>在单链表指针为p的结点之后插入指针为s的结点，正确的操作是：s-&gt;next=p-&gt;next;p-&gt;next=s;</p>
+</li>
+<li><p>在双向链表指针p的结点前插入一个指针q的结点操作是q-&gt;Rlink=p;q-&gt;link=p-&gt;Link;p-&gt;Link-&gt;Rink=q;p-&gt;Link=q;</p>
+</li>
+<li><p>链表是采用链式存储结构的线性表，进行插入、删除操作时，在链表中比在顺序存储结构中效率高</p>
+</li>
+<li><p>线性表的两种存储结构分别是顺序存储结构和链式存储结构<br>#顺序存储结构的主要特点是：（1）结点中只有自身的信息域，没有关联信息域，因此顺序存储结构的存储密度大、空间利用率高<br>（2）通过计算地址直接访问任何数据元素，即可以随机访问（3）插入和删除操作会引起大量元素的移动<br>#链式存储结构的主要特点是：（1）结点除自身的信息域外，还有表示关联信息的指针域，因此链式存储结构的存储密度小、存储空间利用率低（2）在逻辑上相邻的结点在物理上不必相邻，因此不可以随机存取，只能顺序存取<br>（3）插入和删除操作方便灵活，不必移动结点中的指针域即可</p>
+</li>
+<li><p>对于栈操作数据的原则是后进先出</p>
+</li>
+<li><p>有六个元素6，5，4，3，2，1的顺序进栈，346521不是合法的出栈序列</p>
+</li>
+<li><p>若一个栈以向量V[1..n]存储，初始栈顶指针top为n+1，则下面x进栈的正确操作是top=top-1;V[top]=x</p>
+</li>
+<li><p>设计一个判别表达式中左，右括号是否配对出现的算法，采用栈数据结构最佳</p>
+</li>
+<li><p>表达式a<em>(b+c)-d的后缀表达式是abc+*d-<br>#((a</em>(b+c))-d)=&gt;(a<em>(b+c))d-=&gt;a(b+c)</em>d-=&gt;abc+*d-</p>
+</li>
+<li><p>若用一个大小为6的数组来实现循环队列，且当前rear和front的值分别为0和3，当从队列中删除一个元素，再加入两个元素后，rear和front的值分别为2和4<br>#队列是3450，其中front是3，rear是0，删除一个元素，从front删除，变成4，增加两个元素，从rear增加，变成了1和2，最终变成了4（front）5012（rear）<br>#根据队列(特殊的线性表）先进先出的规则：它只允许在表的前端（front）进行删除和操作，而在表的后端（rear）进行插入操作</p>
+</li>
+<li><p>循环队列A[0…m-1]存放其元素值，用front和rear分别表示队头和队尾，则当前队列中的元素数是(rear-front+m+1)%m</p>
+</li>
+<li><p>循环队列存储在数组A[0…m]中，则入队时的操作为rear=(rear+1)mod(m+1)</p>
+</li>
+<li><p>栈和队列的共同点是只允许在端点处插入和删除元素</p>
+</li>
+<li><p>栈和队都是限制存取点的线性结构</p>
+</li>
+<li><p>递归过程或函数调用时，处理参数及返回地址，要用一种称为栈的数据结构<br>#在函数调用过程中形成嵌套时，则应使最后被调用的函数最先返回，递归函数执行时也是如此</p>
+</li>
+<li><p>用不带头结点的单链表存储队列时，其队头指针指向队头结点，其队尾指针指向队尾结点，则在进行删除操作时队头，队尾指针都可能要修改</p>
+</li>
+<li><p>栈和队列的存储方式既可以是顺序方式，又可以是链式方式</p>
+</li>
+<li><p>队列和栈都是操作受限的线性表，但只有队列允许在表的两端进行运算，而栈只允许在栈顶方向进行</p>
+</li>
+<li><p>循环队列通常是靠队头、队尾、下标来来实现头尾相接</p>
+</li>
+<li><p>任何一个递归过程都可以转换成非递归过程</p>
+</li>
+<li><p>循环队列队满时数组空间无空闲</p>
+</li>
+<li><p>两个栈共享一片连续内存空间时，为提高内存利用率，减少溢出机会，应把两个栈的栈底分别设在这片内存的空间的两端</p>
+</li>
+<li><p>顺序栈用data[1…n]存储数据，栈顶指针是top，则值为x的元素入栈的操作是data[++top]=x</p>
+</li>
+<li><p>表达式求值是栈应用的一个典型例子</p>
+</li>
+<li><p>已知链队列的头尾指针分别是f和r，则将值x入队的操作序列是s-&gt;next=r-&gt;next;r-&gt;next=s;r=s;</p>
+</li>
+<li><p>用S表示入栈操作，X表示出栈操作，若元素入栈的顺序为1234，为了得到1342出栈顺序，相应的S和X的操作串为SXSSXSXX</p>
+</li>
+<li><p>两个栈共享空间时栈满的条件top1+1=top2[栈1栈顶指示器top1，栈2栈顶指示器top2]</p>
+</li>
+<li><p>假溢出时大量移动数据元素</p>
+</li>
+<li><p>设Q[0…N-1]为循环队列，其头、尾指针分别为P和R，则队Q中当前所含元素个数为(R-P+N)%N</p>
+</li>
+<li><p>在无头结点的单链表中，第一个结点的地址存放在头指针中，而其他结点的存储地址存放在前趋结点的指针域中</p>
+</li>
+<li><p>在根据序号查找的运算中，使用顺序表比链表好</p>
+</li>
+<li><p>顺序表无前驱后继，链表的头结点没有前驱，尾结点没有后继</p>
+</li>
+<li><p>在双链表中做插入运算的时间复杂度为O（1）</p>
+</li>
+<li><p>L是线性表，已知LengthList(L)的值是5，经DelList（L，2）运算后，LengthList（L)的值是4<br>#DelList（L,i)是删除L链表中第i个位置的结点</p>
+</li>
+<li><p>在单链表中，增加头结点的目的是方便运算的实现</p>
+</li>
+<li><p>两个指针P和Q，分别指向单链表啊的两个元素，P所指元素是Q所指元素前驱的条件是</p>
+</li>
+<li><p>设Llink、Rlink分别为循环双链表结点的左和右指针，则指针P所指的元素是双循环链表L的为元素的条件是p-&gt;Rlink==L</p>
+</li>
+<li><p>顺序栈用data[1…n]存储数据，栈顶指针是top，则值为x的元素入栈的操作是data[++top]=x<br>#出栈是–top</p>
+</li>
+<li><p>表达式求值是栈应用的一个典型例子</p>
+</li>
+<li><p>已知链队列的头尾指针分别是f和r，则将值x入队的操作序列是s-&gt;next=r-&gt;next;r-&gt;next=s;r=s; </p>
+</li>
+<li><p>若串S=‘software’,其子串的数目是37<br>#’software’是八个字符，其子串是（1+8）*8/2=36 再加上一个空字符串 也就是1</p>
+</li>
+<li><p>若一个栈的输入序列为1，2，3…n,输出序列的第一元素是i，则第j个输出元素是不确定的</p>
+</li>
+<li><p>表达式3<em>2^(4+2</em>2-6*3)-5 求值过程中当扫描到6时，对象栈和算符栈分别是什么？其中^为乘幂</p>
+<h1 id="第一次：对象栈：3；算符栈：-；"><a href="#第一次：对象栈：3；算符栈：-；" class="headerlink" title="第一次：对象栈：3；算符栈：*；"></a>第一次：对象栈：3；算符栈：*；</h1><p>第二次：对象栈：3，2；算符栈：<em>,^,(；<br>第三次：对象栈：3，2，4；算符栈：<em>，^,(,+;<br>第四次：对象栈：3，2，4，2；算符栈：</em>，^,(,+,</em>;<br>第五次：对象栈：3，2，4，4；算符栈：<em>,^,(,+;<br>第六次：对象栈：3，2，8；算符栈：</em>，^,(</p>
+<ol start="55">
+<li><p>指针p所指结点有后继结点的条件是<br>p-&gt;next!=null</p>
+</li>
+<li><p>在一个以h为头的单循环链表中，p指针指向链尾的条件是p.next=h</p>
+</li>
+<li><p>用链接方式存储的队列，在进行删除运算时头、尾指针可能都要修改</p>
+</li>
+<li><p>在顺序表中，等概率情况下，插入和删除一个元素平均需移动表长的一半个元素，具体移动元素的个数与表长和该元素在表中的位置有关</p>
+</li>
+<li><p>设单链表中指针p指向结点A，若要删除A的后继结点（假设A存在后续结点），则需修改指针的操作为q=p-&gt;next;p-&gt;next=(p-&gt;next)-&gt;next;delete q;</p>
+</li>
+<li><p>单链表中设置头结点的作用是为了运算方便</p>
+</li>
+<li><p>非空的单循环链表由头指针head指示，则其尾结点（由指针p所指）满足p-&gt;next=head</p>
+</li>
+<li><p>在由尾指针rear指示的单循环链表中，在表尾插入一个结点s的操作序列是s-&gt;next=rear-&gt;next;rear-&gt;next=s;删除开始结点的操作序列为q=rear-&gt;next-&gt;next;rear-&gt;next-&gt;next=q-&gt;next;delete q;</p>
+</li>
+<li><p>一个具有n个结点的单链表，在指针p所指结点后插入一个新结点的时间复杂度为O（1）；在给定值为x的结点后插入一个新结点的时间复杂度为O（n）</p>
+</li>
+<li><p>可由一个尾指针唯一确定的链表有循环链表，循环双链表，双链表</p>
+</li>
+<li><p>p=q只能表示p和q指向同一起始地址，而所知类型则不一定相同</p>
+</li>
+<li><p>在单链表中，要取得某个元素，必须从头指针开始查找，所以单链表是顺序存取结构</p>
+</li>
+<li><p>在单链表中，除了头结点以外，任一结点的存储位置由其前驱结点的指针域</p>
+</li>
+<li><p>在双链表中，每个结点设置了两个指针域，其中一个指向前驱结点，另一个指向后继结点</p>
+</li>
+<li><p>栈通常采用的两种存储结构是顺序存储结构和链接存储结构（或顺序栈和链栈），其判定栈空的条件分别是栈顶指针top=-1和top=NULL，判定栈满的条件分别是栈顶指针top等于数组的长度和内存无用空间</p>
+</li>
+<li><p>数组Q[n]用来表示一个循环队列，front为队头元素的前一个位置，rear为队尾元素的位置，计算队列中元素个数的公式为（rear-front+n）%n</p>
+</li>
+<li><p>设有两个串p和q，求q在p中首次出现的位置的运算称作模式匹配</p>
+</li>
+<li><p>二维数组可以看成是数据元素为线性表的线性表</p>
+</li>
+<li><p>稀疏矩阵压缩后，必会失去随机存取功能</p>
+</li>
+<li><p>广义表（（），（a,b))的表头为空表</p>
+</li>
+<li><p>（1）<br>ListNode<em>Demol(LinkList L,ListNode</em>p)<br>{<br>//L是有头结点的单链表<br>ListNode<em>q=L-&gt;next!=p)<br>q=q-&gt;next;<br>if(q)<br>return q;<br>else<br>Error(“</em>p not in L”)<br>}<br>返回结点*p的直接前趋结点地址</p>
+</li>
+</ol>
+</li>
+</ol>
+<p>（2）<br>void Demo2(ListNode<em>p,ListNode</em>q)<br>{<br>    //p,<em>q是链表中的两个结点<br>    DataType temp;<br>    temp=p-&gt;data;<br>    p-&gt;data=q-&gt;data;<br>    q-&gt;data=temp;<br>}<br>#p是一个指针<br>p-&gt;next一般表示指向下一个存储单元，就是下一个存储单元地址信息<br>p-&gt;data表示p这个指针的存储单元中的值<br>交换结点</em>p和结点*q(p和q的值不变)</p>
+<p>程序填空<br>1.已知线性表中的元素是无序的，并以表头结点的单链表作存储，试写一算法，删除表中所有大于min，小于max的元素<br>void delete （1kist head；datatype min，max）<br>{<br>    q=head-&gt;next;<br>    while(p!=NULL)<br>    {<br>        if((p-&gt;data&lt;=min))||(p-&gt;data&gt;=max)<br>        {<br>            {q=p;p=p-&gt;next;}<br>            else<br>            {q-&gt;next=p-&gt;next;<br>                delete(P);<br>                p=q-&gt;next;<br>            }<br>        }<br>    }<br>}<br>#<em>head=q-&gt;next表示头指针指向p的下一个结点<br>q-&gt;next=p表示指针p指向的结点赋给q-&gt;next<br>p=q表示指针p移向q所指的结点<br>q=</em>head表示指针q一项头指针指的结点</p>
+<ol start="2">
+<li>在头结点head的单链表的结点a之后插入新元素x<br>struct node<br>{<br> elemtype data;<br> node<em>next;<br>};<br>void lkinsert(node</em>head,elemtype x)<br>{<br> node<em>s,</em>p;<br> s=new node;<br> s-&gt;data=x;<br> p=head-&gt;next;<br>}</li>
+</ol>
+
+    </div>
+
+    
+    
+    
+        
+      
+
+      <footer class="post-footer">
+          
+            
+          
+          <div class="post-tags">
+            
+              <a href="/tags/题目/" rel="tag"># 题目</a>
+            
+          </div>
+        
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+              
+                <a href="/2019/10/09/我的hexo搭建过程/" rel="next" title="我的blog搭建过程">
+                  <i class="fa fa-chevron-left"></i> 我的blog搭建过程
+                </a>
+              
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+              
+                <a href="/2019/10/14/中国股市/" rel="prev" title="中国股市">
+                  中国股市 <i class="fa fa-chevron-right"></i>
+                </a>
+              
+            </div>
+          </div>
+        
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+        
+        
+        
+        
+      
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#第一次：对象栈：3；算符栈：-；"><span class="nav-number">1.</span> <span class="nav-text">第一次：对象栈：3；算符栈：*；</span></a></li></ol></div>
+        
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image"
+      src="/images/gun.PNG"
+      alt="Xjc">
+  <p class="site-author-name" itemprop="name">Xjc</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+    
+      
+      
+      <div class="site-state-item site-state-categories">
+        
+          
+            <a href="/categories/">
+          
+        
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">分类</span>
+        </a>
+      </div>
+    
+      
+      
+      <div class="site-state-item site-state-tags">
+        
+          
+            <a href="/tags/">
+          
+        
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">标签</span>
+        </a>
+      </div>
+    
+  </nav>
+</div>
+  <div class="feed-link motion-element">
+    <a href="/atom.xml" rel="alternate">
+      <i class="fa fa-rss"></i>RSS
+    </a>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Xjc</span>
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js?v=3.1.0"></script>
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+<script src="/js/utils.js?v=7.4.1"></script><script src="/js/motion.js?v=7.4.1"></script>
+<script src="/js/schemes/muse.js?v=7.4.1"></script>
+<script src="/js/next-boot.js?v=7.4.1"></script>
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+</body>
+</html>
