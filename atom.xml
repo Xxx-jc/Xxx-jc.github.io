@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://Xxx-jc.github.io/"/>
-  <updated>2020-03-14T10:12:26.429Z</updated>
+  <updated>2020-04-04T02:39:46.139Z</updated>
   <id>http://Xxx-jc.github.io/</id>
   
   <author>
@@ -15,6 +15,40 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>情感问题</title>
+    <link href="http://Xxx-jc.github.io/2020/04/01/%E6%83%85%E6%84%9F%E9%97%AE%E9%A2%98/"/>
+    <id>http://Xxx-jc.github.io/2020/04/01/情感问题/</id>
+    <published>2020-04-01T07:52:44.000Z</published>
+    <updated>2020-04-04T02:39:46.139Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;关于“自古深情留不住，唯有套路得人心”这句话&quot;&gt;&lt;a href=&quot;#关于“自古深情留不住，唯有套路得人心”这句话&quot; class=&quot;headerlink&quot; title=&quot;关于“自古深情留不住，唯有套路得人心”这句话&quot;&gt;&lt;/a&gt;关于“自古深情留不住，唯有套路得人心”这句话&lt;/h3&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>计算机组成原理相关知识</title>
+    <link href="http://Xxx-jc.github.io/2020/03/14/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/"/>
+    <id>http://Xxx-jc.github.io/2020/03/14/计算机组成原理/</id>
+    <published>2020-03-14T13:12:29.000Z</published>
+    <updated>2020-03-16T00:44:05.893Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;微型计算机的发展以微处理器技术为标志。&lt;br&gt;机器字长：计算机一次整数运算所能处理的二进制位数&lt;br&gt;操作系统位数：其所依赖的指令集的位数&lt;br&gt;摩尔定律：揭示了信息技术进步的速度，集成电路上可容纳的晶体管数目，约每隔18个月便会增加一倍，整体性能也将提升一倍。&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>赵老师论股</title>
@@ -55,17 +89,11 @@
     <link href="http://Xxx-jc.github.io/2019/10/14/%E4%B8%AD%E5%9B%BD%E8%82%A1%E5%B8%82/"/>
     <id>http://Xxx-jc.github.io/2019/10/14/中国股市/</id>
     <published>2019-10-13T16:23:38.000Z</published>
-    <updated>2020-03-14T10:20:54.361Z</updated>
+    <updated>2020-03-27T07:44:18.096Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;中国正在经历货币化向证券化转变的现状，这是所有发展中国家走向发达的必经之路，证券化意味着有大量的企业会通过IPO等手段获得融资，而不是靠银行贷款，在这一阶段将有大量的公司主体排队上市，上市的公司越来越多，但是短期难以引起新的资金进入股市，因为资金都被套在了房地产上，所以我们
-        
-      
+      &lt;p&gt;中国正在经历货币化向证券化转变的现状，这是所有发展中国家走向发达的必经之路，证券化意味着有大量的企业会通过IPO等手段获得融资，而不是靠银行贷款，在这一阶段将有大量的公司主体排队上市，上市的公司越来越多，但是短期难以引起新的资金进入股市，因为资金都被套在了房地产上，所以我们将经历一个估值回归的过程，扭转我们市盈率过高的问题，要走出这一阶段，需要两个条件，要么等待房地产释放资金，要么慢慢等居民收入增加，但在短期内，这两样都无法实现。所以目前咱们的证券市场都是存量博弈，股市里没有外面的钱进来，长期就是这么些个 资金进进出出，你赚钱必有人赔钱，你赔钱必有人赚钱，没有赚钱效应，而且转型升级中的产业政策意味着未来会有更多的公司排队上市，狼多肉少。&lt;/p&gt;
     
     </summary>
     
